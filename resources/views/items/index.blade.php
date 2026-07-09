@@ -34,7 +34,6 @@
                 <option value="lost">Hilang</option>
             </select>
 
-            <!-- Tombol tambah — hanya tampil bukan field_crew -->
             <template x-if="!isCrewUser">
                 <button @click="openCreateModal()"
                     class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white
@@ -91,7 +90,8 @@
                                 <td class="px-5 py-3.5 text-right">
                                     <template x-if="!isCrewUser">
                                         <span>
-                                            <button @click="edit(item)" class="text-indigo-600 hover:text-indigo-800 mr-3 p-1">
+                                            <button @click="edit(item)"
+                                                class="text-indigo-600 hover:text-indigo-800 mr-3 p-1">
                                                 <i class="fas fa-pen-to-square"></i>
                                             </button>
                                             <button @click="remove(item.id)" class="text-red-500 hover:text-red-700 p-1">

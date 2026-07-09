@@ -18,3 +18,4 @@ Route::get('/incidents', fn() => view('incidents.index'))->name('incidents');
 Route::get('/events', fn() => view('events.index'))->name('events');
 Route::get('/flightcases', fn() => view('flightcases.index'))->name('flightcases');
 Route::get('/users', fn() => view('users.index'))->name('users');
+Route::get('/403', fn() => abort(403))->name('403');
